@@ -1,0 +1,6 @@
+@import "../mixins/mixins.font-face";
+
+@include font-face("Founders", "../fonts/FoundersGroteskLight/FoundersGroteskLight", 300, normal);
+@include font-face("Founders", "../fonts/FoundersGroteskRegular/FoundersGroteskRegular", 400, normal);
+@include font-face("Founders", "../fonts/FoundersGroteskMedium/FoundersGroteskMedium", 500, normal);
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 4 Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4-Copy-3">
+            <circle id="Oval" fill="#F21833" cx="20" cy="20" r="20"></circle>
+            <g id="Group" transform="translate(16.000000, 16.000000)">
+                <rect id="Rectangle" fill="#F21833" x="0" y="0" width="9" height="9"></rect>
+                <path d="M5.41636364,3.58363636 L7.36363636,3.58363636 L7.36363636,5.41636364 L5.41636364,5.41636364 L5.41636364,7.36363636 L3.58363636,7.36363636 L3.58363636,5.41636364 L1.63636364,5.41636364 L1.63636364,3.58363636 L3.58363636,3.58363636 L3.58363636,1.63636364 L5.41636364,1.63636364 L5.41636364,3.58363636 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

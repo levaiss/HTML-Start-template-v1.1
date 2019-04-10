@@ -1,0 +1,44 @@
+// -------------------------------------
+// Body
+// -------------------------------------
+
+body {
+  font-size: pxtorem(17px);
+  font-family: $font-default;
+  font-weight: 300;
+  line-height: (28/17);
+  color: $color-black;
+  min-width: 320px;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;   /* Firefox */
+  -webkit-font-smoothing: antialiased; /* WebKit  */
+  &::placeholder {}
+  &::selection {
+    background-color: $color-accent;
+    color: $color-white;
+  }
+}
+
+button, input, textarea {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
+}
+input, textarea {
+  &:focus:required:invalid {}
+  &:required:valid {}
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-weight: normal;
+}
+
