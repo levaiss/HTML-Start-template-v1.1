@@ -18,7 +18,7 @@ function watchFiles() {
   gulp.watch("./src/assets/img/**/*", gulp.series(img.resize, copy.assets));
   gulp.watch("./src/assets/fonts/**/*", copy.assets);
   gulp.watch("./src/assets/svg_sources/**/*", svgSprite.build);
-  gulp.watch("./src/pages/**/*", gulp.series(template.build, server.reload()));
+  gulp.watch("./src/pages/**/*", gulp.series(template.build, server.reload));
 }
 
 // define tasks
