@@ -5,9 +5,11 @@ const localhost = "localhost";
 // BrowserSync
 function init(done) {
   browsersync.init({
-    host: localhost,
+    files: [
+        "./dist/css/**/*",
+        "./dist/js/**/*"
+    ],
     proxy: localhost,
-    port: 8080,
     open: true
   });
   done();
