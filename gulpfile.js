@@ -7,7 +7,7 @@ const js = require("./gulp-tasks/scripts.js");
 const server = require("./gulp-tasks/browsersync.js");
 const css = require("./gulp-tasks/styles.js");
 const clean = require("./gulp-tasks/clean.js");
-const nunjucks = require("./gulp-tasks/nunjucks.js");
+const template = require("./gulp-tasks/template.js");
 const svgSprite = require("./gulp-tasks/svg-sprite.js");
 const copy = require("./gulp-tasks/copy.js");
 
@@ -18,13 +18,7 @@ function watchFiles() {
   gulp.watch("./src/assets/img/**/*", gulp.series(img.resize, copy.assets));
   gulp.watch("./src/assets/fonts/**/*", copy.assets);
   gulp.watch("./src/assets/svg_sources/**/*", svgSprite.build);
-  gulp.watch(
-    [
-      "./src/includes/**/*",
-      "./src/pages/**/*",
-    ],
-    nunjucks.build
-  );
+  gulp.watch("./src/pages/**/*", gulp.series(template.build, server.reload()));
 }
 
 // define tasks
@@ -35,7 +29,7 @@ const build = gulp.series(
     copy.assets,
     css.build,
     img.resize,
-    nunjucks.build,
+    template.build,
     svgSprite.build,
     gulp.series(js.lint, js.build)
   )

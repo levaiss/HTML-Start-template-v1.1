@@ -1,18 +1,13 @@
 // packages
 const browsersync = require("browser-sync").create();
+const localhost = "localhost";
 
 // BrowserSync
 function init(done) {
   browsersync.init({
-    server: {
-      baseDir: "./dist/"
-    },
-    files: [
-      "./dist/css/main.min.css",
-      "./dist/js/main.bundle.js",
-      "./dist/**/*.{html, xml}"
-    ],
-    port: 3001,
+    host: localhost,
+    proxy: localhost,
+    port: 8080,
     open: true
   });
   done();

@@ -11,13 +11,11 @@
 @import "functions/functions.pxtorem.scss";
 
 // Mixins
-@import "mixins/mixins.media-queries.scss";
 
 // Base
 @import "base/base.fonts.scss";
 @import "base/base.html.scss";
 @import "base/base.body.scss";
-@import "base/base.links.scss";
 @import "base/base.margins.scss";
 @import "base/base.icons.scss";
 
@@ -28,13 +26,10 @@
 @import "components/components.preloader.scss";
 
 // Sections
-@import "sections/sections.base.scss";
-@import "sections/sections.splash.scss";
-@import "sections/section.why.scss";
+
 
 // Utilities
-@import "utilities/utilities.cover.scss";
+@import "utilities/utilities.objectfit.scss";
 @import "utilities/utilities.scroll.scss";
-@import "utilities/utilities.spacing.scss";
 
 // Vendors

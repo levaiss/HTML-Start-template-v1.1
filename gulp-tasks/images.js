@@ -8,24 +8,24 @@ const sharp = require("sharp");
 const transforms = [
   {
     src: "./src/assets/img/stubs/*",
-    dist: "./dist/img/stubs/_optimized/",
+    dist: "./dist/img/stubs/_low/",
     options: {
       width: 1920,
-      quality: 70
+      quality: 10
     }
   },
   {
     src: "./src/assets/img/stubs/*",
-    dist: "./dist/img/stubs/_1440/",
+    dist: "./dist/img/stubs/_800/",
     options: {
-      width: 1440
+      width: 800
     }
   },
   {
     src: "./src/assets/img/stubs/*",
-    dist: "./dist/img/stubs/_600/",
+    dist: "./dist/img/stubs/_400/",
     options: {
-        width: 600
+        width: 400
     }
   }
 ];

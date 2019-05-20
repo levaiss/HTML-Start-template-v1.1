@@ -1,24 +1,33 @@
-//window.$ = window.jQuery = require("jquery");
+//import $ from "jquery";
 
-import $ from "jquery";
-import objectFitPolyfill from "objectFitPolyfill";
+import objectFitImages from "object-fit-images";
+import LazyLoad from "vanilla-lazyload";
 import svg4everybody from "svg4everybody/dist/svg4everybody.legacy.js";
 
 //require('imports-loader?window.jQuery=jquery!../../node_modules/jquery-validation/dist/jquery.validate.min.js');
 
-import * as nav from "./modules/module.js";
+//import * as module from "./modules/module.js";
 
-$(window).on("ready", function() {
-    objectFitPolyfill();
+let lazyLoadInstance = new LazyLoad({
+    elements_selector: ".js-lazy"
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Document ready");
+
+    objectFitImages();
     svg4everybody();
-    nav.init();
 });
 
-$(window).on("load", function() {
-    let l = () => {
-        console.log("test");
-    };
+window.onload = function () {
+    console.log("Window load");
 
-    l();
-});
+    if (lazyLoadInstance) {
+        lazyLoadInstance.update();
+    }
+};
 
+window.onscroll = function() {
+    //scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+};
