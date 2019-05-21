@@ -1,4 +1,4 @@
-# HTML Start template v1.0
+# HTML Start template v1.1
 
 Thank for perfect tutorial https://github.com/jeromecoupe .
 
