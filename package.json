@@ -8,10 +8,6 @@
     "type": "git",
     "url": "https://github.com/levaiss/HTML-Monster-v.1.0.3/blob/master/gulpfile.js"
   },
-  "browserslist": [
-    "last 2 versions",
-    "not ie < 11"
-  ],
   "devDependencies": {
     "@11ty/eleventy": "^0.8.1",
     "@babel/core": "^7.4.3",
