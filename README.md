@@ -9,7 +9,9 @@ Npm version: 6.9.0
 Gulp version: 4.0.0
 
 1. Download from GitHub
-2. npm i gulp -g
-3. npm ci
-4. gulp build
-4. gulp watch
+2. Run php web server
+3. In "gulp-tasks/browsersync.js" change ``const localhost = "localhost"`` on your host name
+4. ``npm i gulp -g``
+5. ``npm ci``
+6. ``gulp build``
+7. ``gulp watch``
