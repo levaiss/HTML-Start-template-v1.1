@@ -1,6 +1,6 @@
 // packages
 const browsersync = require("browser-sync").create();
-const localhost = "localhost";
+const localhost = "masstraffic";
 
 // BrowserSync
 function init(done) {

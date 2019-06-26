@@ -6,9 +6,9 @@ const
     cheerio = require("gulp-cheerio"),
     svgmin = require("gulp-svgmin");
 
-// CSS task
+// SCSS task
 function svgSpriteBuild() {
-    return gulp.src("./src/assets/svg_sources/*.svg")
+    return gulp.src("./src/assets/icons/*.svg")
         .pipe(svgmin({
             js2svg: {
                 pretty: true
@@ -26,7 +26,7 @@ function svgSpriteBuild() {
         .pipe(svgSprite({
             mode: {
                 symbol: {
-                    sprite: "../sprite.svg"
+                    sprite: "../icons-sprite.svg"
                 }
             }
         }))

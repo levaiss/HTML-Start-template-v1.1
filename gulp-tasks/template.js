@@ -1,10 +1,10 @@
 // packages
 const gulp = require("gulp");
 
-// CSS task
+// Template task
 function templateBuild() {
     return gulp
-        .src("./src/pages/*.php")
+        .src("./src/pages/**/*.php")
         .pipe(gulp.dest("./dist/"));
 }
 
