@@ -19,7 +19,7 @@
 
     <!-- Apple icon (minimal) -->
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <link rel="favicon" href="/img/favicon.png">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 
 </head>
 <body>
