@@ -1,4 +1,4 @@
-# HTML Start template v1.1
+# Gulp + Php Start template.
 
 Thank for perfect tutorial https://github.com/jeromecoupe .
 
